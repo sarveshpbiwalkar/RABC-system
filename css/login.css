@@ -1,0 +1,106 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../imgs/bg-img.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 48px;
+    color: #ffffff;
+}
+
+/* Glass effect for the login container */
+.container {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out; /* Animation for the container */
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles for form elements */
+.form-label {
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Button styles */
+.btn {
+    background: rgba(255, 255, 255, 0.2); 
+    border: 2px solid rgba(255, 255, 255, 0.4); 
+    border-radius: 10px; 
+    color: #fff; 
+    padding: 10px 40px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4); 
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.btn:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Checkbox styles */
+.form-check-label{
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00000080;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
